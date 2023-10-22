@@ -1,2 +1,2 @@
 # WeatherApp
- using HTML CSS &amp; Javascript | Weather App Javascript
+HTML CSS &amp; Javascript | Weather App Javascript
