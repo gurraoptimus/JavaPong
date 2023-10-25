@@ -17,6 +17,18 @@ public class GamePanel{
 
     }
     public void draw(Graphics g){
-        
+    
+    }
+    public void move(){
+
+    }
+    public void checkCollision(){
+
+    }
+    public void run(){
+
+    }
+    public class AL extends KeyAdapter{
+        public 
     }
 }
