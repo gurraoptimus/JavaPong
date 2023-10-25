@@ -29,6 +29,11 @@ public class GamePanel{
 
     }
     public class AL extends KeyAdapter{
-        public 
+        public void KeyPressed(KeyEvent e){
+
+        }
+        public void KeyPressed(KeyEvent e){
+            
+        }
     }
 }
