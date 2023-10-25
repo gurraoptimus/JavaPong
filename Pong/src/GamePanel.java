@@ -16,4 +16,7 @@ public class GamePanel{
     public void  paint(Graphics g){
 
     }
+    public void draw(Graphics g){
+        
+    }
 }
