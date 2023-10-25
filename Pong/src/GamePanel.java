@@ -32,7 +32,7 @@ public class GamePanel{
         public void KeyPressed(KeyEvent e){
 
         }
-        public void KeyPressed(KeyEvent e){
+        public void KeyReleased(KeyEvent e){
             
         }
     }
