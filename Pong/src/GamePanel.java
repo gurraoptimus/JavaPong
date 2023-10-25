@@ -5,6 +5,15 @@ import javax.swing.*;
 
 public class GamePanel{
     GamePanel(){
-        
+
+    }
+    public void newBall(){
+
+    }
+    public void newPaddels(){
+
+    }
+    public void  paint(Graphics g){
+
     }
 }
