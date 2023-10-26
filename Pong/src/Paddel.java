@@ -19,5 +19,7 @@ public class Paddel{
     public void move(){
         
     }
-
+    public void draw(Grahics g){
+        
+    }
 }
