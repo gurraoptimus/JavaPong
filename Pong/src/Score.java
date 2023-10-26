@@ -7,4 +7,7 @@ public class Score{
     Score(){
         
     }
+    public void draw(Grahics g){
+        
+    }
 }
