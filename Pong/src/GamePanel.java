@@ -15,7 +15,7 @@ public class GamePanel extends JPanel implements Runnable{
     public void newBall(){
 
     }
-    public void newPaddels(){
+    public void newPaddles(){
 
     }
     public void paint(Graphics g){
