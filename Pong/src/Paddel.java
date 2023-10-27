@@ -3,8 +3,8 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class Paddel extends Rectangle{
-    Paddel(){
+public class Paddle extends Rectangle{
+    Paddle(){
 
     }
     public void KeyPressed(KeyEvent e){
