@@ -22,6 +22,7 @@ public class GamePanel extends JPanel implements Runnable{
     GamePanel(){
         newPaddles();
         newBall();
+        score=new Score(GAME_WIDTH,GAME_HEIGHT);
     }
     public void newBall(){
 
