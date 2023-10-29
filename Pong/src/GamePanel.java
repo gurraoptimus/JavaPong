@@ -53,7 +53,9 @@ public class GamePanel extends JPanel implements Runnable{
     }
     public void run(){
         //game loop
-        
+        long lastTime=System.nanoTime();
+        double amountOfTicks=60.0;
+        double
     }
     public class AL extends KeyAdapter{
         public void KeyPressed(KeyEvent e){
