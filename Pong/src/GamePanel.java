@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable{
     static final int GAME_WIDTH=1000;
-    static final int GAME_HEIGHT=(int)(GAME_WIDTH * (5/9));
+    static final int GAME_HEIGHT=(int)(GAME_WIDTH * (0.5555));
     static final Dimension SCREEN_SIZE=new Dimension(GAME_WIDTH,GAME_HEIGHT);
     static final int BALL_DIAMETER=20;
     static final int PADDLE_WIDTH=25;
@@ -25,7 +25,10 @@ public class GamePanel extends JPanel implements Runnable{
         score=new Score(GAME_WIDTH,GAME_HEIGHT);
         this.setFocusable(true)
         this.addKeyListener(new AL());
-        this.setP
+        this.setPreferredSize(SCREEN_SIZE);
+
+        gameThread=new Thread(this);
+        gameThread.start();
     }
     public void newBall(){
 
