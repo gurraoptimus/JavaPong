@@ -52,7 +52,8 @@ public class GamePanel extends JPanel implements Runnable{
 
     }
     public void run(){
-
+        //game loop
+        
     }
     public class AL extends KeyAdapter{
         public void KeyPressed(KeyEvent e){
