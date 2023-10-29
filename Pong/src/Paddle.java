@@ -22,7 +22,7 @@ public class Paddle extends Rectangle{
     public void move(){
         
     }
-    public void draw(Grahics g){
+    public void draw(Graphics g){
         
     }
 }
