@@ -24,6 +24,7 @@ public class Paddle extends Rectangle{
         
     }
     public void draw(Graphics g){
-        if(id=)
+        if(id==1)
+        g.setColor(Color.White);
     }
 }
