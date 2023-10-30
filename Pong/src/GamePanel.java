@@ -74,10 +74,12 @@ public class GamePanel extends JPanel implements Runnable{
     }
     public class AL extends KeyAdapter{
         public void KeyPressed(KeyEvent e){
-
+            paddle1.KeyPressed(e);
+            paddle2.KeyPressed(e);
         }
         public void KeyReleased(KeyEvent e){
-            
+            paddle1.KeyReleased(e);
+            paddle2.KeyReleased(e);
         }
     }
 }
