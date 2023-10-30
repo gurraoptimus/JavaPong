@@ -67,6 +67,7 @@ public class GamePanel extends JPanel implements Runnable{
                 checkCollision();
                 repaint();
                 delta--;
+                System.out.println("code super()");
             }
         }
     }
