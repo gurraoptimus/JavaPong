@@ -59,7 +59,7 @@ public class GamePanel extends JPanel implements Runnable{
         double delta=0;
         while(true){
             long now=System.nanoTime();
-            delta +=
+            delta+=(now -lastTime)/ns;
         }
     }
     public class AL extends KeyAdapter{
