@@ -28,6 +28,6 @@ public class Paddle extends Rectangle{
             g.setColor(Color.white);
         else
             g.setColor(Color.white);
-        g.
+        g.fillRect(x, y, width, height);
     }
 }
