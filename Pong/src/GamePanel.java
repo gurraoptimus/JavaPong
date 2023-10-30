@@ -60,6 +60,14 @@ public class GamePanel extends JPanel implements Runnable{
         while(true){
             long now=System.nanoTime();
             delta+=(now -lastTime)/ns;
+            lastTime=now;
+            if(delta >=1){
+                move();
+                checkCollision();
+                repaint();
+                delta--;
+                System.out.println("TEST");
+            }
         }
     }
     public class AL extends KeyAdapter{
