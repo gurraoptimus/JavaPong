@@ -34,7 +34,7 @@ public class GamePanel extends JPanel implements Runnable{
 
     }
     public void newPaddles(){
-
+        paddle1
     }
     public void paint(Graphics g){
         image=createImage(getWidth(),getHeight());
@@ -66,7 +66,6 @@ public class GamePanel extends JPanel implements Runnable{
                 checkCollision();
                 repaint();
                 delta--;
-                System.out.println("TEST");
             }
         }
     }
