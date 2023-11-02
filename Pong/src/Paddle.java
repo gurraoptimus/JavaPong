@@ -12,7 +12,9 @@ public class Paddle extends Rectangle{
         this.id=id;
     }
     public void KeyPressed(KeyEvent e){
-            
+            switch(id){
+              case 1:  
+            }
     }
     public void KeyReleased(KeyEvent e){
             
