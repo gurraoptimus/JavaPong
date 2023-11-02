@@ -23,6 +23,16 @@ public class Paddle extends Rectangle{
                     setYDirection(speed);
                     move();
                   }
+                  break;
+                case 2:
+                    if(e.getKeyCode()==KeyEvent.VK_UP){
+                    setYDirection(-speed);
+                    move();
+                  }
+                    if(e.getKeyCode()==KeyEvent.VK_DOWN){
+                    setYDirection(speed);
+                    move();
+                  }
             }
     }
     public void KeyReleased(KeyEvent e){
