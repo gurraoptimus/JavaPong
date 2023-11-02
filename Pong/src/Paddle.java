@@ -13,7 +13,11 @@ public class Paddle extends Rectangle{
     }
     public void KeyPressed(KeyEvent e){
             switch(id){
-              case 1:  
+              case 1:
+                  if(e.getKeyCode()==KeyEvent.VK_W){
+                    setYDirection(-10)
+                    move();
+                  }
             }
     }
     public void KeyReleased(KeyEvent e){
