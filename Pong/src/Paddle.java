@@ -16,7 +16,7 @@ public class Paddle extends Rectangle{
             switch(id){
               case 1:
                   if(e.getKeyCode()==KeyEvent.VK_W){
-                    setYDirection-speed);
+                    setYDirection(-speed);
                     move();
                   }
                   if(e.getKeyCode()==KeyEvent.VK_S){
