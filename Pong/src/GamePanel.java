@@ -54,6 +54,7 @@ public class GamePanel extends JPanel implements Runnable{
         //stops paddles at window edges
         if(paddle1.y<=0)
             paddle1.y=0;
+        if(paddle1.y >=())
     }
     public void run(){
         //game loop
