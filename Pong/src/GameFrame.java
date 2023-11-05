@@ -9,12 +9,12 @@ public class GameFrame extends JFrame{
       panel=new GamePanel();
       this.add(panel);
       this.setTitle("Java Pong");
+      this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      this.setLocationRelativeTo(null);
+      this.setVisible(true);
       this.setResizable(false);
       this.setBackground(Color.black);
-      this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       this.pack();
-      this.setVisible(true);
-      this.setLocationRelativeTo(null);
       
   }
 }
