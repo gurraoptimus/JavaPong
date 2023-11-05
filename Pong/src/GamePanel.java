@@ -108,7 +108,6 @@ public class GamePanel extends JPanel implements Runnable{
 			newBall();
 			System.out.println("Player 1: "+score.player1);
 		}
-	}
     }
     public void run(){
         //game loop
