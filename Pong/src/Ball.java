@@ -7,7 +7,9 @@ public class Ball extends Rectangle{
     Random random;
     int xVelocity;
     int yVelocity;
-    Ball(){
+    Ball(int x, int y, int width, int height){
+        super(x,y,width,height);
+        random=new Random();
 
     }
     public void setXDirection(int randomXDirection){
