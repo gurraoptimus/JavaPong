@@ -79,7 +79,7 @@ public class GamePanel extends JPanel implements Runnable{
 			ball.xVelocity = Math.abs(ball.xVelocity);
 			ball.xVelocity++; //optional for more difficulty
 			if(ball.yVelocity>0)
-				ball.yVelocity++; //optional for more difficulty
+			ball.yVelocity++; //optional for more difficulty
 			else
 				ball.yVelocity--;
 			ball.setXDirection(-ball.xVelocity);
