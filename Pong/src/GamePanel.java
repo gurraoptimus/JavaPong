@@ -32,7 +32,7 @@ public class GamePanel extends JPanel implements Runnable{
     }
     public void newBall(){
         random=new Random();
-        ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),(GAME_HEIGHT/2)-(BALL_DIAMETER/2),BALL_DIAMETER,BALL_DIAMETER);
+        ball = new Ball((GAME_WIDTH/2)-(BALL_DIAMETER/2),random.nextInt(GAME_HEIGHT-BALL_DIAMETER),BALL_DIAMETER,BALL_DIAMETER);
     }
     public void newPaddles(){
         paddle1=new Paddle(0,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1);
@@ -40,7 +40,7 @@ public class GamePanel extends JPanel implements Runnable{
     }
     public void paint(Graphics g){
         image=createImage(getWidth(),getHeight());
-        graphics=image.getGraphics();
+        graphics =  image.getGraphics();
         draw(graphics);
         g.drawImage(image,0,0,this);
     }
