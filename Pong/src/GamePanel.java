@@ -45,11 +45,11 @@ public class GamePanel extends JPanel implements Runnable{
         g.drawImage(image,0,0,this);
     }
     public void draw(Graphics g){
-            paddle1.draw(g);
-            paddle2.draw(g);
+            //paddle1.draw(g);
+            //paddle2.draw(g);
             ball.draw(g);
 	        score.draw(g);
-        Toolkit.getDefaultToolkit().sync();
+        //Toolkit.getDefaultToolkit().sync();
     }
     public void move(){
         paddle1.move();
@@ -120,11 +120,11 @@ public class GamePanel extends JPanel implements Runnable{
             delta+=(now -lastTime)/ns;
             lastTime=now;
             if(delta >=1){
-                move();
+                //move();
                 checkCollision();
                 repaint();
                 delta--;
-                System.out.println("https://github.com/gurraoptimus/JavaPong/issues/2");
+                System.out.println("paddle1.draw(g),paddle2.draw(g);");
             }
         }
     }
