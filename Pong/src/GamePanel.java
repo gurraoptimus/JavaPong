@@ -41,7 +41,7 @@ public class GamePanel extends JPanel implements Runnable{
     public void paint(Graphics g){
         image=createImage(getWidth(),getHeight());
         graphics=image.getGraphics();
-        draw(graphics);
+            draw(graphics);
         g.drawImage(image,0,0,this);
     }
     public void draw(Graphics g){
@@ -52,9 +52,9 @@ public class GamePanel extends JPanel implements Runnable{
         Toolkit.getDefaultToolkit().sync();
     }
     public void move(){
-        paddle1.move();
-        paddle2.move();
-        ball.move();
+            paddle1.move();
+            paddle2.move();
+            ball.move();
     }
     public void checkCollision(){
         	//bounce ball off top & bottom window edges
