@@ -124,7 +124,7 @@ public class GamePanel extends JPanel implements Runnable{
                 checkCollision();
                 repaint();
                 delta--;
-                //System.out.println("super()");
+                System.out.println("https://github.com/gurraoptimus/JavaPong/issues/2");
             }
         }
     }
