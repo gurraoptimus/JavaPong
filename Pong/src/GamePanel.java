@@ -36,7 +36,7 @@ public class GamePanel extends JPanel implements Runnable{
     }
     public void newPaddles(){
         paddle1=new Paddle(0,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1);
-        paddle1=new Paddle(GAME_WIDTH-PADDLE_WIDTH,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1);
+        paddle2=new Paddle(GAME_WIDTH-PADDLE_WIDTH,(GAME_HEIGHT/2)-(PADDLE_HEIGHT/2),PADDLE_WIDTH,PADDLE_HEIGHT,1);
     }
     public void paint(Graphics g){
         image=createImage(getWidth(),getHeight());
@@ -45,8 +45,8 @@ public class GamePanel extends JPanel implements Runnable{
         g.drawImage(image,0,0,this);
     }
     public void draw(Graphics g){
-            //paddle1.draw(g);
-            //paddle2.draw(g);
+            paddle1.draw(g);
+            paddle2.draw(g);
             ball.draw(g);
 	        score.draw(g);
         //Toolkit.getDefaultToolkit().sync();
@@ -117,10 +117,10 @@ public class GamePanel extends JPanel implements Runnable{
         double delta=0;
         while(true){
             long now=System.nanoTime();
-            delta+=(now -lastTime)/ns;
+            delta+=(now - lastTime)/ns;
             lastTime=now;
             if(delta >=1){
-                //move();
+                move();
                 checkCollision();
                 repaint();
                 delta--;
